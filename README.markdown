@@ -82,3 +82,9 @@ detect-client
 
 This is a simple web example that shows you how to detect the client properties (browser, platform, etc)
 that your application is being viewed in.
+
+Flickr Stream
+------------
+
+This is a simple example of a web application to display a Flickr stream. It also illustrates how to use a
+templater (or theme) in a web application.
