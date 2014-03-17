@@ -1,14 +1,14 @@
 Joomla Platform Examples
 ========================
 
-These examples are provided to help you learn how to structure and build applications with the Joomla Platform.
+These examples are provided to help you learn how to structure and build applications with the Joomla Platform from the cli side.
 
 Installation
 ============
 
 Clone or download the https://github.com/joomla/joomla-platform and
 https://github.com/joomla/joomla-platform-examples under the same parent folder.
-Then copy the ``bootstrap.dist.php`` file to ``bootstrap.php``.
+
 
 For example, if your parent folder is called ``platform-test``, you would have the following
 folders under the ``platform-test`` folder: ``cli, joomla-platform``, and ``web``.
@@ -28,23 +28,23 @@ Command Line Applications
 The examples found in the ``cli`` folder are all based on the new ``JCli`` class.
 The is a base level class purpose built for running applications from the command line.
 
-101-hello-world
+Download and Unzip Joomla Package
 ---------------
 
 This is a simple example application that outputs "Hello World" to the terminal.
 
-argv
+Install Joomla Package
 ----
 
 This application shows how to access command line arguments.
 
-changelog
+Install Joomla extensions
 ---------
 
 This application builds the HTML version of the Joomla Platform change log from the Github API
 that is used in news annoucements. It provides an example of how to use the ``JHttp`` class.
 
-cron-plugins
+Overload cli
 ------------
 
 This application show you how you could use JCli to build a cron manager for Joomla CMS plugins.
