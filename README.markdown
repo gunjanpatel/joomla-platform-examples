@@ -25,24 +25,23 @@ All you need is PHP configured to run from the command line.
 Command Line Applications
 =========================
 
-The examples found in the ``cli`` folder are all based on the new ``JCli`` class.
+The examples found in the ``cli`` folder are all based on the new ``JApplicationCli`` class.
 The is a base level class purpose built for running applications from the command line.
 
 Download and Unzip Joomla Package
 ---------------
 
-This is a simple example application that outputs "Hello World" to the terminal.
+This is a simple example application that download and unzip a Joomla Package .
 
 Install Joomla Package
 ----
 
-This application shows how to access command line arguments.
+This application install a Joomla Package.
 
 Install Joomla extensions
 ---------
 
-This application builds the HTML version of the Joomla Platform change log from the Github API
-that is used in news annoucements. It provides an example of how to use the ``JHttp`` class.
+This application install joomla extensions. It provides an example of how to use the ``JHttp`` class.
 
 Overload cli
 ------------
