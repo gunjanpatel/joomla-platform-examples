@@ -201,21 +201,21 @@ class InstallCli extends JApplicationCli {
         $help[] = 'Install Joomla! Extensions from CLI';
         $help[] = 'Usage: php installcli.php [options]';
         $help[] = '';
-        $help[] = 'Options: -f [extensionfile]';
+        $help[] = 'Option: -f [extensionfile]';
         $help[] = 'Example usage:php installcli.php -f plg_example.zip';
         $help[] = 'Install the example plugin from /tmp/plg_example.zip';
         $help[] = '';
-        $help[] = 'Options: -u [extensionurl]';
-        $help[] = 'Example usage:php installcli.php -u http://www.joomladdons.eu/update/mod_related_author_update.xml';
-        $help[] = 'Install the extensions plugin from www.joomladdons.eu/update/mod_related_author_update.xml';
+        $help[] = 'Option: -u [extensionurl]';
+        $help[] = 'Example usage:php installcli.php -u jfiles.csv';
+        $help[] = 'Install the extensions listed on jfiles.csv from web';
         $help[] = '';
-        $help[] = 'Options: -m';
+        $help[] = 'Option: -m';
         $help[] = 'Example usage:php installcli.php -m';
-        $help[] = 'Install the extensions listed on /cli/ijefcdfl.txt';
+        $help[] = 'Install the extensions listed on /cli/files.txt';
         $help[] = '';
-        $help[] = 'Options: -w [extensionurl]';
+        $help[] = 'Option: -w [extensionurl]';
         $help[] = 'Example usage:php installcli.php -w http://www.joomladdons.eu/update/mod_related_author_update.xml';
-        $help[] = 'Install the extensions plugin from www.joomladdons.eu/update/mod_related_author_update.xml';
+        $help[] = 'Install the extension module from www.joomladdons.eu/update/mod_related_author_update.xml';
         $help[] = '';
        // Print out the help information.
         if(!$option) {

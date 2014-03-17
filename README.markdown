@@ -33,32 +33,60 @@ Download and Unzip Joomla Package
 
 This is a simple example application that download and unzip a Joomla Package .
 
+[HELP] Download and Unzip Joomla! from CLI
+Usage: php downloadcli.php [options]
+
+Option: -z [filezip]
+Example usage:php downloadcli.php -z joomla.zip
+Unzip the joomla package from joomla.zip
+
+Option: -u [url]
+Example usage:php downloadcli.php -u http://joomlacode.org/gf/download/frsrelease/19239/158104/Joomla_3.2.3-Stable-Full_Package.zip
+Download and unzip from http://joomlacode.org/gf/download/frsrelease/19239/158104/Joomla_3.2.3-Stable-Full_Package.zip
+
+Option: -f [file]
+Example usage:php downloadcli.php -f joomlacode.txt
+Download and unzip from url listed on file joomlacode.txt
+
+
+
 Install Joomla Package
 ----
 
 This application install a Joomla Package.
+Usage:
+php icli.php --db-user=root --db-name=t323 --db-pass=1234 --admin-user=admin --admin-pass=admin --admin-email='admin@example.com'
 
 Install Joomla extensions
 ---------
 
-This application install joomla extensions. It provides an example of how to use the ``JHttp`` class.
+This application install joomla extensions. 
+
+Usage: php installcli.php [options]
+
+Option: -f [extensionfile]
+Example usage:php installcli.php -f plg_example.zip
+Install the example plugin from /tmp/plg_example.zip
+
+Option: -u [extensionurl]
+Example usage:php installcli.php -u jfiles.csv
+Install the extensions listed on jfiles.csv from web
+
+Option: -m
+Example usage:php installcli.php -m
+Install the extensions listed on /cli/files.txt
+
+Option: -w [extensionurl]
+Example usage:php installcli.php -w http://www.joomladdons.eu/update/mod_related_author_update.xml
+Install the extension module from www.joomladdons.eu/update/mod_related_author_update.xml
+
 
 Overload cli
 ------------
 
-This application show you how you could use JCli to build a cron manager for Joomla CMS plugins.
-The plugins would be configured via parameters in the CMS itself, but run via this command line
-application. It makes use of JLog for logging activity in rolling daily log files. The
-application would simply be added to any available scheduling software and run at appropriate
-intervals.
+Based on the com_overlaod create dummy articles and category
 
-While this example shows how to run all the plugins at the same time, it would not be difficult
-to add an additional database table to support staggered running of individual plugins.
+Usage: php overloadcli.php [options]
 
-database
---------
-
-This application shows how to override the constructor and connect to the database.
-
-show-config
------------
+example usage: php overloadcli.php -a 10 -c 10 -d 1
+Create 10 articles from 10 categories with depth=1 ie create 100 dummy articles
