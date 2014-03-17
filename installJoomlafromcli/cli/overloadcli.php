@@ -7,7 +7,7 @@
  */ 
 
 /** 
- * Finder CLI Bootstrap 
+ * Overload CLI create dummy articles and categories
  * 
  * Run the framework bootstrap with a couple of mods based on the script's needs 
  */ 
@@ -130,7 +130,7 @@ if (!defined('JPATH_LIBRARIES'))
 
 
 /** 
- * A command line cron job to attempt to remove files that should have been deleted at update. 
+ * A command line cron job to create dummy articles and categories base on com_overload. 
  * 
  * @package  Joomla.Cli 
  * @since    3.0 
