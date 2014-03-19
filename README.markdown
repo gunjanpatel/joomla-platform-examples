@@ -6,13 +6,7 @@ These examples are provided to help you learn how to structure and build applica
 Installation
 ============
 
-Clone or download the https://github.com/joomla/joomla-platform and
-https://github.com/joomla/joomla-platform-examples under the same parent folder.
-
-
-For example, if your parent folder is called ``platform-test``, you would have the following
-folders under the ``platform-test`` folder: ``cli, joomla-platform``, and ``web``.
-You would also have a file called ``bootstrap.php`` in that folder.
+install like any joomla extension (todo pkg, manifest)
 
 Running Examples
 ================
